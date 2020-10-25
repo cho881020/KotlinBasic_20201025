@@ -42,10 +42,28 @@ class MainActivity : AppCompatActivity() {
 //            1) 뭐라고 입력했는지 조회 (contentEdt -> text를 get)
 //            조회한 내용을 기록해둬야, 2번에서 사용한다.
 
-            val inputContent = contentEdt.text
+            val inputContent = contentEdt.text.toString()
 
 //            2) 그 내용을 텍스트뷰에 반영 (contentTxt -> text를 set)
             contentTxt.text = inputContent
+
+
+//            조건문 예시 : 입력한내용이 "안녕하세요" 라면, 토스트로 "인사메세지" 문구 출력
+
+            if (inputContent == "안녕하세요") {
+
+                Toast.makeText(this, "인사메세지", Toast.LENGTH_SHORT).show()
+
+            }
+            else if (inputContent == "안녕히가세요") {
+                Toast.makeText(this, "작별인사메세지", Toast.LENGTH_SHORT).show()
+            }
+            else if (inputContent == "Hello") {
+                Toast.makeText(this, "영문 인사", Toast.LENGTH_SHORT).show()
+            }
+            else {
+                Toast.makeText(this, "그 외의 문장", Toast.LENGTH_SHORT).show()
+            }
 
         }
 
