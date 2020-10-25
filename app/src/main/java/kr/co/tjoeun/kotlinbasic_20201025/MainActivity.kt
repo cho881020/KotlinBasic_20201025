@@ -20,7 +20,10 @@ class MainActivity : AppCompatActivity() {
 
         toastBtn.setOnClickListener {
 
-            Toast.makeText(this, "토스트버튼 눌림", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "토스트 띄우기", Toast.LENGTH_SHORT).show()
+
+            Toast.makeText(this, "자동완성 토스트", Toast.LENGTH_SHORT).show()
+
 
         }
 
