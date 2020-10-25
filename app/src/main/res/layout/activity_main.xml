@@ -31,5 +31,25 @@
         android:layout_height="wrap_content"
         android:text="토스트 띄우기" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="버튼 누르면 텍스트뷰 문구 변경하기"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/resultTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="변경될 텍스트뷰"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_marginTop="5dp"/>
+
+    <Button
+        android:id="@+id/changeTextBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="문구 변경하기" />
 
 </LinearLayout>
