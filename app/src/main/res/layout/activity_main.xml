@@ -59,6 +59,7 @@
         android:layout_marginTop="15dp"/>
 
     <TextView
+        android:id="@+id/contentTxt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="입력한대로 변경될 텍스트뷰"
@@ -67,12 +68,14 @@
         android:layout_marginTop="5dp"/>
 
     <EditText
+        android:id="@+id/contentEdt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="여기에 입력한대로 반영됩니다"
         android:singleLine="true"/>
 
     <Button
+        android:id="@+id/okBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="입력 문구 반영하기" />
