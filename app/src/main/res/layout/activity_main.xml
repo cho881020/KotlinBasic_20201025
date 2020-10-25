@@ -19,4 +19,17 @@
         android:layout_height="wrap_content"
         android:text="로그 찍기" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="토스트 띄워보는 버튼"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/toastBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="토스트 띄우기" />
+
+
 </LinearLayout>
